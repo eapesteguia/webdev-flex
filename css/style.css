@@ -1,0 +1,161 @@
+* {
+    margin: 0;
+	padding: 0;
+    outline: 0;
+    background: transparent;
+    box-sizing: border-box;
+} 
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+}
+
+h1, h2, h3, h4, h5 {
+    color: #002452;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+}
+
+img {
+    height: auto;
+    max-width: 100%;
+}
+
+.header-container {
+    background-image: url(../img/index-header.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 35em;
+    display: flex;
+    justify-content: space-between;
+    padding: 1em;
+}
+
+.header-logo img {
+    width: 30%;
+    }
+
+.menu {
+    display: flex;
+    justify-content: right;
+}
+
+.menu ul {
+    display:flex;  
+    list-style:none;
+}
+
+.menu ul li {
+    padding-right: 1em; 
+}
+
+.section-container {
+text-align: center;
+padding: 1em;
+border-bottom: 1px solid #CAD5CA; /*TEMPORAL: para identificar mejor los seccionts */
+margin: 0.5em 0em;
+}
+
+.section-container p {
+    margin: 0.7em 0em;
+}
+
+.section-product {
+    display: flex;
+    justify-content: center;
+}
+
+.article-product {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.article-product img {
+    width: 60%;
+    border: 1px solid #00CE00;
+}
+
+.product {
+    padding: 1em;
+}
+
+.product h3 {
+    padding: 0.5em;
+}
+
+.propiedades-container, .contacto-container {
+    display: flex;
+    justify-content: space-evenly;
+    text-align: left;
+}
+
+/* Lo copié del video 3 (Repaso) de la clase Flexbox */
+.photo-grid-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 1em;
+    margin: 0.5em 0em;
+    border-bottom: 1px solid #CAD5CA; /*TEMPORAL: para identificar mejor los seccionts */
+}
+
+.photo-grid {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.photo-grid-item {
+    border: 1px solid #00CE00;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 1em;
+}
+
+.nav-footer {
+    display: flex;
+}
+
+.nav-footer ul {
+    display:flex;  
+    list-style:none;
+}
+
+.nav-footer ul li {
+    padding-right: 1em; 
+}
+
+.contacto-footer {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.contacto-footer ul {
+    /* display:flex;   */
+    list-style:none;
+    text-align: right;
+}
+
+.redes-footer {
+    display: flex;
+    justify-content: left;
+}
+
+.redes-footer ul {
+    display:flex;  
+    list-style:none;
+}
+
+.redes-footer ul li {
+    padding-right: 1em; 
+} 
+
+.copyright {
+    text-align: center;
+}

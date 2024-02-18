@@ -1,0 +1,4 @@
+#ignore config for GIT
+.vscode/
+pruebas.css
+pruebas.html
