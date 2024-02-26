@@ -27,6 +27,12 @@ mark {
     background-color: #cbe0aaff;
 }
 
+/* prueba para hacer reponsive el player embebido de YT */
+.yt-responsive {
+    aspect-ratio: 16/9;
+    width: 100%;
+  }
+
 /* 
 Paleta de colores generada con coolors.co 
 https://coolors.co/001f53-ffffc4-cbe0aa-68a177-00ce00
