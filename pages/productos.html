@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
@@ -9,8 +9,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <!-- Link CSS -->
-    <link rel="stylesheet" href="../css/style.css">
+    <!-- CSS | Bootstrap va antes del propio por efecto cascada -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="/css/style.css">
     <meta name="description" content="Descripcion">
     <meta name="keywords" content="Keywords">
     <meta name="author" content="Author">
@@ -18,175 +21,182 @@
     <meta name="robots" content="index, nofollow">
 </head>
 
+<!-- Body -->
 <body>
     <!-- Header -->
-    <header class="header-container">
-        <div class="header-logo">
-            <a href="../index.html"><img src="../img/logo_piste-500.png" alt="Logo Pisté"
-                    title="Los mejores pistachos del mundo!"></a>
-        </div>
-        <nav class="menu">
-            <ul>
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="./productos.html">Productos</a></li>
-                <li><a href="./nosotros.html">Nosotros</a></li>
-                <li><a href="./vivero.html">Vivero</a></li>
-                <li><a href="./contacto.html">Contacto</a></li>
-            </ul>
+    <header class="header-container fs-5">
+        <nav class="navbar sticky-top border-bottom navbar-expand-md bg-body-tertiary">
+            <div class="container-lg">
+                <a class="navbar-brand col" href="/index.html"><img src="/img/logo_piste-500.png"
+                        alt="Logo Pisté" title="Los mejores pistachos del mundo!"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="col collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="/index.html""><strong>Inicio</strong></a>
+                  </li>
+                  <li class="nav-item">
+                                <a class="nav-link active" aria-current="page"
+                                    href="/pages/productos.html"><strong>Productos</strong></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/pages/nosotros.html"><strong>Nosotros</strong></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/pages/vivero.html"><strong>Vivero</strong></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/pages/contacto.html"><strong>Contacto</strong></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
+
     <!-- Main -->
-    <main>
+    <main class="container-lg">
         <!-- Productos -->
-        <section class="section-container">
-            <h2>Productos destacados</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita ea, labore enim ducimus dolore, rerum
-                perferendis a quas quod iure deserunt ipsa ex.</p>
-            <div class="section-product">
-                <div class="productos-en-pares">
-                    <article class="article-product">
-                        <div class="product">
-                            <img src="../img/producto1-pistachos-sincascara.png" alt="Pistachos sin cáscara">
-                            <h3>Pistachos sin cáscara</h3>
-                            <p>Descripcion 1. Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                        </div>
-                    </article>
-                    <article class="article-product">
-                        <div class="product">
-                            <img src="../img/producto2-pistacho-natural-con-cascara.png"
-                                alt="Pistachos naturales con cáscara">
-                            <h3>Otro producto 1</h3>
-                            <p>Descripcion 2. Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                        </div>
-                    </article>
-                </div>
-                <div class="productos-en-pares">
-                    <article class="article-product">
-                        <div class="product">
-                            <img src="../img/producto2-pistacho-natural-con-cascara.png"
-                                alt="Pistachos naturales con cáscara">
-                            <h3>Pistachos naturales con cáscara</h3>
-                            <p>Descripcion 2. Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                        </div>
-                    </article>
-                    <article class="article-product">
-                        <div class="product">
-                            <img src="../img/producto1-pistachos-sincascara.png" alt="Pistachos sin cáscara">
-                            <h3>Otro producto 2</h3>
-                            <p>Descripcion 1. Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                        </div>
-                    </article>
-                </div>
-                <div class="productos-en-pares">
-                    <article class="article-product">
-                        <div class="product">
-                            <img src="../img/producto3-pistachos-tostados-salados.png"
-                                alt="Pistachos tostados y salados">
-                            <h3>Pistachos tostados y salados</h3>
-                            <p>Descripcion 3. Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                        </div>
-                    </article>
-                    <article class="article-product">
-                        <div class="product">
-                            <img src="../img/producto3-pistachos-tostados-salados.png"
-                                alt="Pistachos tostados y salados">
-                            <h3>Otro producto 3</h3>
-                            <p>Descripcion 3. Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                        </div>
-                    </article>
-                </div>
+        <section class="container-fluid section-container text-center">
+            <label class="c-verde">Nuestros productos</label>
+            <h1>Pistachos y frutos secos</h1>
+            <p class="fs-5">Compras por mayor y menor. Consule por promociones.</p>
+            <div class="row">
+                <article class="article-product col-12 col-md-4">
+                    <div class="product rounded-4 border">
+                        <a href="/pages/productos.html"><img class="rounded-top-4"
+                                src="/img/producto1-pistachos-sincascara.png" alt="Pistachos sin cáscara"></a>
+                        <h3>Pistachos sin cáscara</h3>
+                        <p>Utilizado para panadería, repostería y heladería</p>
+                        <label class="c-verde mb-3">Comercialización</label>
+                        <p>Cajas de 25 kg con triple barrera bromatológica, envasadas al vacío en atmósfera controlada
+                            que conserva el producto en óptimas condiciones por 2 años.</p>
+                        <p><mark>COD: PNA2-k10</mark></p>
+                    </div>
+                </article>
+                <article class="article-product col-12 col-md-4">
+                    <div class="product rounded-4 border">
+                        <a href="/pages/productos.html"><img class="rounded-top-4"
+                                src="/img/producto2-pistacho-natural-con-cascara.png"
+                                alt="Pistachos naturales con cáscara"></a>
+                        <h3>Pistachos con cáscara</h3>
+                        <p>Orientado a una alimentación equilibrada</p>
+                        <label class="c-verde mb-3">Comercialización</label>
+                        <p>Cajas de 10 kg que contienen 2 bolsas de 5 kg cada una con triple barrera bromatológica,
+                            envasadas al vacío en atmósfera controlada.</p>
+                        <p><mark>COD: PNA1-B1000</mark></p>
+                    </div>
+                </article>
+                <article class="article-product col-12 col-md-4">
+                    <div class="product rounded-4 border">
+                        <a href="/pages/productos.html"><img class="rounded-top-4"
+                                src="/img/producto3-pistachos-tostados-salados.png"
+                                alt="Pistachos tostados y salados"></a>
+                        <h3>Tostados y salados</h3>
+                        <p>Para consumir como snack en cualquier momento del día</p>
+                        <label class="c-verde mb-3">Comercialización</label>
+                        <p>Cajas de 10 kg que contienen 2 bolsas de 5 kg cada una con triple barrera bromatológica,
+                            envasadas al vacío en atmósfera controlada.</p>
+                        <p><mark>COD: PNA1-B2000</mark></p>
+                    </div>
+                </article>
             </div>
         </section>
         <!-- Whatsapp -->
-        <section class="section-container">
-            <h2>Whatsapp</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita ea, labore enim ducimus dolore, rerum
-                perferendis a quas quod iure deserunt ipsa e.</p>
-            <p><a href="./contacto.html">Contacto</a></p>
-        </section>
-        <!-- Propiedades -->
-        <section class="section-container">
-
-            <div class="propiedades">
-                <span>Label</span>
-                <h2>Propiedades del pistacho</h2>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis ratione nesciunt aspernatur
-                    distinctio architecto quod quis vel impedit ad officia deserunt error doloremque incidunt
-                    debitis quos, est, porro alias reiciendis.</p>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis ratione nesciunt aspernatur
-                    distinctio architecto quod quis vel impedit ad officia deserunt error doloremque incidunt
-                    debitis quos, est, porro alias reiciendis.</p>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis ratione nesciunt aspernatur
-                    distinctio architecto quod quis vel impedit ad officia deserunt error doloremque incidunt
-                    debitis quos, est, porro alias reiciendis.</p>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis ratione nesciunt aspernatur
-                    distinctio architecto quod quis vel impedit ad officia deserunt error doloremque incidunt
-                    debitis quos, est, porro alias reiciendis.</p>
+        <section class="container-fluid section-whatsapp text-center">
+            <div class="row gap-3 px-4">
+                <h2>Atendemos por WhatsApp!</h2>
+                <p>Realizá pedidos, hacé seguimientos, pedí presupuestos. Nuestro equipo de ventas está siempre
+                    disponible en WhatsApp para atender tus consultas.</p>
+                <p><a href="/pages/contacto.html" class="btn btn-piste">Mandanos un mensaje</a></p>
             </div>
         </section>
-        <!-- Galería -->
-        <section class="photo-grid-container">
-            <h2>Galería</h2>
-            <article class="photo-grid">
-                <div class="photo-grid-item first-item">
-                    <div class="fotos-en-pares">
-                        <img src="../img/galeria1.jpg" alt="Arbol de pistacho, primer plano">
+        <!-- Propiedades -->
+        <section class="section-container" id="propiedades">
+            <section class="container-fluid section-container text-center">
+                <span class="c-verde">¡Un alimento muy saludable!</span>
+                <h2>Conocé todos los beneficios del pistacho</h2>
+                <div class="row text-sm-start">
+                    <div class="propiedades col-12">
+                        <p class="lead">30 gramos de pistachos contienen 160 calorías, 3 gramos de fibra, 6 gramos de
+                            proteínas y 11 gramos de <span class="fw-bold">¡grasas sanas y ninguna saturada!</span></p>
+                        <h5>Antioxidante</h5>
+                        <p>Además de antioxidantes, como las vitaminas A y C, y el selenio, una ración pistachos aporta
+                            el 8% del valor diario recomendado de magnesio y potasio y otros minerales como el hierro,
+                            que ayudan a “prevenir las alteraciones vasculares”.</p>
+                        <h5>Reduce el colesterol malo</h5>
+                        <p>Incluir pistacho a una dieta sana reduce las concentraciones de colesterol LDL (el malo), de
+                            un modo dependiente de la cantidad, y aumenta las concentraciones de antioxidantes en la
+                            sangre.</p>
+                        <h5>Disminuye el riesgo de diabetes</h5>
+                        <p>Consumir pistachos reduce los niveles de glucosa y aumenta la sensibilidad a la insulina y,
+                            disminuyendo el riesgo de sufrir diabetes tipo 2.</p>
+                        <h5>Nivela el colesterol y triglicéridos</h5>
+                        <p>Ayuda a controlar los niveles de colesterol, la inflamación y la salud de los vasos
+                            sanguíneos y, consumidos en la cantidad recomendada de 42,5 gramos diarios, consigue que no
+                            suban los triglicéridos y haya un buen perfil de lípidos en el organismo.</p>
                     </div>
-                    <div class="photo-grid-item">
-                        <img src="../img/galeria2.jpg" alt="Tractor rojo en finca de pistachos">
-                    </div>
+                    <p class="text-center"><a href="#" class="btn btn-piste">Información nutricional</a></p>
                 </div>
-                <div class="photo-grid-item">
-                    <div class="fotos-en-pares">
-                        <img src="../img/galeria3.jpg" alt="Un pistacho sobre la mano de una persona">
+            </section>
+            <!-- Galería -->
+            <section class="container-fluid section-container text-center separador">
+                <h2 class="pb-3">Conocé nuestras fincas</h2>
+                <article class="row row-gap-3">
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <img class="rounded-3 borde-verde" src="/img/galeria1.jpg"
+                            alt="Arbol de pistacho, primer plano">
                     </div>
-                    <div class="photo-grid-item">
-                        <img src="../img/galeria4.jpg"
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <img class="rounded-3 borde-verde" src="/img/galeria2.jpg"
+                            alt="Tractor rojo en finca de pistachos">
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <img class="rounded-3 borde-verde" src="/img/galeria3.jpg"
+                            alt="Un pistacho sobre la mano de una persona">
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <img class="rounded-3 borde-verde" src="/img/galeria4.jpg"
                             alt="Vivero con cientos de árboles de pistacho en distintas etapas de crecimiento">
                     </div>
-                </div>
-                <div class="photo-grid-item">
-                    <div class="fotos-en-pares">
-                        <img src="../img/galeria5.jpg" alt="Plantín de pistacho germinando">
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <img class="rounded-3 borde-verde" src="/img/galeria5.jpg" alt="Plantín de pistacho germinando">
                     </div>
-                    <div class="photo-grid-item">
-                        <img src="../img/galeria6.jpg" alt="Torres de bandejas de fábrica repletas de pistachos">
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <img class="rounded-3 borde-verde" src="/img/galeria6.jpg"
+                            alt="Torres de bandejas de fábrica repletas de pistachos">
                     </div>
-                </div>
-                </div>
-        </section>
+            </section>
     </main>
     <!-- Footer -->
     <footer>
-        <div class="footer-container">
-            <nav class="nav-footer">
-                <ul>
-                    <li><a href="./index.html">Inicio</a></li>
-                    <li><a href="./pages/productos.html">Productos</a></li>
-                    <li><a href="./pages/nosotros.html">Nosotros</a></li>
-                    <li><a href="./pages/vivero.html">Vivero</a></li>
-                    <li><a href="./pages/contacto.html">Contacto</a></li>
-                </ul>
-            </nav>
-            <div class="contacto-footer">
-                <ul>
-                    <li>mail@direccion.com</li>
-                    <li>Tel: +54 264 xxxx-xxxx</li>
-                    <li>Una dirección postal de San Juan, Argentina</li>
-                </ul>
+    <div class="container-fluid footer-container text-center">
+        <div class="row">
+            <div class="col-12">
+                <h3><a href="/pages/contacto.html">Contacto</a></h3>
+                <p>quiero@pistachos.com</p>
+                <p>Tel: (+54) 9 264 500 6000</p>
+                <p>Quiroz 798 Este Rawson, San Juan, Argentina</p>
             </div>
+            <div class="col-12 my-3 fs-5">
+                <a href="#"><i class="bi bi-facebook px-3"></i></a>
+                <a href="#"><i class="bi bi-instagram px-3"></i></a>
+                <a href="#"><i class="bi bi-linkedin px-3"></i></a>
+            </div>
+
         </div>
-        <div class="redes-footer">
-            <ul>
-                <li><a href="#"><img src="" alt="Facebook"></a></li>
-                <li><a href="#"><img src="" alt="Instagram"></a></li>
-                <li><a href="#"><img src="" alt="Twitter"></a></li>
-            </ul>
+        <div class="copyright fst-italic">
+            <span>Copyright Pisté 2024. Todos los derechos reservados.</span>
         </div>
-        <div class="copyright">
-            <p>Copyright</p>
-        </div>
-    </footer>
+        </footer>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+            crossorigin="anonymous"></script>
 
 </body>
 

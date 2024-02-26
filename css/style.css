@@ -1,3 +1,4 @@
+/* reseteo de CSS */
 * {
     margin: 0;
 	padding: 0;
@@ -12,7 +13,7 @@ body {
 }
 
 h1, h2, h3, h4, h5 {
-    color: #002452;
+    /* color: #001f53ff; */
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
 }
@@ -22,140 +23,179 @@ img {
     max-width: 100%;
 }
 
+mark {
+    background-color: #cbe0aaff;
+}
+
+/* 
+Paleta de colores generada con coolors.co 
+https://coolors.co/001f53-ffffc4-cbe0aa-68a177-00ce00
+
+--penn-blue: #001f53ff;
+--cream: #ffffc4ff;
+--tea-green: #cbe0aaff;
+--mint: #68a177ff;
+--lime-green: #00ce00ff;
+*/
+
+.c-azul {
+    color: #001f53;
+}
+
+.c-crema {
+    color: #ffffc4;
+}
+
+.c-teverde {
+    color: #cbe0aa;
+}
+
+.c-menta {
+    color: #68a177;
+}
+
+.c-verde {
+    color: #00ce00;
+}
+
+.c-gris {
+    color: #E2E8F0;
+}
+
+.separador {
+    border-top: 1px solid #CAD5CA;
+}
+
 .header-container {
     background-image: url(../img/index-header.jpg);
     background-position: center;
     background-repeat: no-repeat;
-    min-height: 35em;
-    display: flex;
-    justify-content: space-between;
-    padding: 1em;
+    min-height: 30rem;
+    color: #001f53ff;
 }
 
-.header-logo img {
+.header-container a {
+    color: #001f53ff;
+}
+
+.header-container a:hover {
+    color: #00ce00ff;
+}
+
+.header-container a:hover:active {
+    color: #68a177ff;
+}
+ 
+/* 
+No sé como reemplazar el color del nav-link active para que aria-urrent se vea en color verde
+.header-container a:visited {
+    color: #68a177ff;
+} */
+
+.navbar-brand {
+    width: 50%;
+    min-width: 100px;
+} 
+
+.navbar-brand img {
     width: 30%;
-    }
-
-.menu {
-    display: flex;
-    justify-content: right;
-}
-
-.menu ul {
-    display:flex;  
-    list-style:none;
-}
-
-.menu ul li {
-    padding-right: 1em; 
+    min-width: 100px;
 }
 
 .section-container {
-text-align: center;
-padding: 1em;
-border-bottom: 1px solid #CAD5CA; /*TEMPORAL: para identificar mejor los seccionts */
-margin: 0.5em 0em;
+/* text-align: center; lo migré a bootstrap */ 
+padding: 2rem 0rem;
 }
 
-.section-container p {
-    margin: 0.7em 0em;
+.section-container h1 {
+    font-size: 2.5rem;
 }
 
-.section-product {
-    display: flex;
-    justify-content: center;
+.section-whatsapp {
+    padding: 2rem 1rem;
+    background-color: #25d366;
 }
 
-.article-product {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+.section-pioneros {
+    padding: 2rem 1em;
+    background-color: #E2E8F0;
 }
 
-.article-product img {
-    width: 60%;
-    border: 1px solid #00CE00;
+.section-contacto {
+    /* padding: 2rem 1em; */
+    background-color: #E2E8F0;
+}
+
+.section-container
+.section-whatsapp
+.section-pioneros
+.section-contacto p {
+    margin: 1rem 0rem;
+}
+
+.article-product p {
+    padding: 0rem 1rem;
+} 
+
+.borde-verde {
+    border: 1.5px solid #00CE00;
 }
 
 .product {
-    padding: 1em;
+    margin: 1em 0em;
+    border: 1px solid #68a177ff; 
 }
 
 .product h3 {
     padding: 0.5em;
 }
 
-.propiedades-container, .contacto-container {
-    display: flex;
-    justify-content: space-evenly;
-    text-align: left;
+.btn-piste {
+    color: white;
+    background-color: #00348F;
+    border-color: #00348F;
 }
 
-/* Lo copié del video 3 (Repaso) de la clase Flexbox */
-.photo-grid-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding: 1em;
-    margin: 0.5em 0em;
-    border-bottom: 1px solid #CAD5CA; /*TEMPORAL: para identificar mejor los seccionts */
+.btn-piste:hover {
+    color: white;
+    background-color: #001f53ff;
+    border-color: #001f53ff;
 }
 
-.photo-grid {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+.btn-piste:active {
+    color: white;
+    background-color: #001f53ff;
+    border-color: #001f53ff;
 }
 
-.photo-grid-item {
-    border: 1px solid #00CE00;
+.btn-amarillo {
+    color: #00ce00ff;
+    background-color: #ffffc4ff;
+    border-color: #ffffc4ff;
+}
+
+.btn-amarillo:hover {
+    color: #00ce00ff;
+    background-color: #cbe0aaff;
+    border-color: #cbe0aaff;
 }
 
 .footer-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    padding: 1em;
+    background-color: #001f53ff;
+    padding-top: 2em;
+    color: white;
 }
 
-.nav-footer {
-    display: flex;
-}
-
-.nav-footer ul {
-    display:flex;  
+.footer-container ul {
     list-style:none;
+    padding: 0px;
 }
 
-.nav-footer ul li {
-    padding-right: 1em; 
+.footer-container a {
+    color: white;
+    text-decoration: none;
 }
 
-.contacto-footer {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.contacto-footer ul {
-    /* display:flex;   */
-    list-style:none;
-    text-align: right;
-}
-
-.redes-footer {
-    display: flex;
-    justify-content: left;
-}
-
-.redes-footer ul {
-    display:flex;  
-    list-style:none;
-}
-
-.redes-footer ul li {
-    padding-right: 1em; 
-} 
-
-.copyright {
-    text-align: center;
+.footer-container a:hover {
+    color: #00CE00;
 }

@@ -1,16 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Proyecto Coder: Pistachos de San Juan</title>
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <!-- Link CSS -->
-    <!-- El CSS de Bootstrap va antes del propio: efecto cascada -->
+    <!-- CSS | Bootstrap va antes del propio por efecto cascada -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="./css/style.css">
     <meta name="description" content="Descripcion">
     <meta name="keywords" content="Keywords">
@@ -19,172 +21,171 @@
     <meta name="robots" content="index, nofollow">
 </head>
 
+<!-- Body -->
 <body>
     <!-- Header -->
-    <header class="header-container">
-        <div class="header-logo">
-            <a href="/proyecto-coder/index.html"><img src="./img/logo_piste-500.png" alt="Logo Pisté"
-                    title="Los mejores pistachos del mundo!"></a>
-        </div>
-        <nav class="menu">
-            <ul>
-                <li><a href="./index.html">Inicio</a></li> 
-                <li><a href="./pages/productos.html">Productos</a></li>
-                <li><a href="./pages/nosotros.html">Nosotros</a></li>
-                <li><a href="./pages/vivero.html">Vivero</a></li>
-                <li><a href="./pages/contacto.html">Contacto</a></li>
-            </ul>
+    <header class="header-container fs-5">
+        <nav class="navbar sticky-top border-bottom navbar-expand-md bg-body-tertiary">
+            <div class="container-lg">
+                <a class="navbar-brand col" href="#"><img src="./img/logo_piste-500.png"
+                        alt="Logo Pisté" title="Los mejores pistachos del mundo!"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="col collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="./index.html""><strong>Inicio</strong></a>
+                  </li>
+                  <li class="nav-item">
+                                <a class="nav-link" href="./pages/productos.html"><strong>Productos</strong></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/nosotros.html"><strong>Nosotros</strong></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/vivero.html"><strong>Vivero</strong></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./pages/contacto.html"><strong>Contacto</strong></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
     <!-- Main -->
-    <main>
+    <main class="container-lg">
         <!-- Productos -->
-        <section class="section-container">
-            <h2>Productos destacados</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita ea, labore enim ducimus dolore, rerum
-                perferendis a quas quod iure deserunt ipsa ex.</p>
-            <div class="section-product">
-                <article class="article-product">
-                    <div class="product">
-                        <a href="./pages/productos.html"><img src="./img/producto1-pistachos-sincascara.png"
-                                alt="Pistachos sin cáscara"></a>
+        <section class="container-fluid section-container text-center">
+            <h1>Producimos los mejores <span class="c-verde">pistachos de San Juan.</span></h1>
+            <p class="fs-5">Somos una empresa de triple impacto: <span class="fw-bold">social, económico y ambiental</span>. Producimos un alimento saludable, optimizando el consumo de agua y energía. </p>
+            <div class="row">
+                <article class="article-product col-12 col-md-4">
+                    <div class="product rounded-4 border">
+                        <a href="./pages/productos.html"><img class="rounded-top-4"
+                                src="./img/producto1-pistachos-sincascara.png" alt="Pistachos sin cáscara"></a>
                         <h3>Pistachos sin cáscara</h3>
-                        <p>Descripcion 1. Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <p>Contiene solo la pepa de pistacho, sin la cáscara y al natural. Ideal para utilizar en la cocina y sorprender.</p>
                     </div>
                 </article>
-                <article class="article-product">
-                    <div class="product">
-                        <a href="./pages/productos.html"><img src="./img/producto2-pistacho-natural-con-cascara.png"
+                <article class="article-product col-12 col-md-4">
+                    <div class="product rounded-4 border">
+                        <a href="./pages/productos.html"><img class="rounded-top-4"
+                                src="./img/producto2-pistacho-natural-con-cascara.png"
                                 alt="Pistachos naturales con cáscara"></a>
-                        <h3>Pistachos naturales con cáscara</h3>
-                        <p>Descripcion 2. Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <h3>Pistachos con cáscara</h3>
+                        <p>Es el pistacho más conocido. Un snack inteligente. Ideal para comer entre comidas y cuidar tu salud.</p>
                     </div>
                 </article>
-                <article class="article-product">
-                    <div class="product">
-                        <a href="./pages/productos.html"><img src="./img/producto3-pistachos-tostados-salados.png"
+                <article class="article-product col-12 col-md-4">
+                    <div class="product rounded-4 border">
+                        <a href="./pages/productos.html"><img class="rounded-top-4"
+                                src="./img/producto3-pistachos-tostados-salados.png"
                                 alt="Pistachos tostados y salados"></a>
-                        <h3>Pistachos tostados y salados</h3>
-                        <p>Descripcion 3. Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        <h3>Tostados y salados</h3>
+                        <p>Son los más sabrosos. Se convirtieron rápidamente en el snack perfecto para acompañar cualquier bebida.</p>
                     </div>
                 </article>
             </div>
         </section>
         <!-- Whatsapp -->
-        <section class="section-container">
-            <h2>Whatsapp</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita ea, labore enim ducimus dolore, rerum
-                perferendis a quas quod iure deserunt ipsa e.</p>
-            <p><a href="./pages/contacto.html">Contacto</a></p>
+        <section class="container-fluid section-whatsapp text-center">
+            <div class="row gap-3 px-4">             
+            <h2>WhatsApp!</h2>
+            <p>Mantenete informado sobre nuestros productos. Realizá pedidos, hacé seguimientos, pedí presupuestos. Nuestro equipo de ventas está siempre disponible en WhatsApp para atender tus consultas.</p>
+            <p><a href="./pages/contacto.html" class="btn btn-piste">Mandanos un mensaje</a></p>
+        </div>
         </section>
         <!-- Propiedades -->
-        <section class="section-container">
-            <div class="propiedades-container">
-                <div class="propiedades">
-                    <span>Label</span>
-                    <h2>Propiedades del pistacho</h2>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis ratione nesciunt aspernatur
-                        distinctio architecto quod quis vel impedit ad officia deserunt error doloremque incidunt
-                        debitis quos, est, porro alias reiciendis.</p>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis ratione nesciunt aspernatur
-                        distinctio architecto quod quis vel impedit ad officia deserunt error doloremque incidunt
-                        debitis quos, est, porro alias reiciendis.</p>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis ratione nesciunt aspernatur
-                        distinctio architecto quod quis vel impedit ad officia deserunt error doloremque incidunt
-                        debitis quos, est, porro alias reiciendis.</p>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis ratione nesciunt aspernatur
-                        distinctio architecto quod quis vel impedit ad officia deserunt error doloremque incidunt
-                        debitis quos, est, porro alias reiciendis.</p>
-                    <p><a href="./pages/productos.html">Conocé más</a></p>
+        <section class="container-fluid section-container text-center">
+            <span class="c-verde">Cuidá tu salud</span>
+            <h2>Las propiedades del pistacho</h2>
+            <div class="row my-lg-4">
+                <div class="propiedades col-12 col-lg-6 text-lg-start">
+                    <p class="lead">Los pistachos están por naturaleza <span class="fw-bold">libres de colesterol y grasas trans</span> y son uno de los frutos secos con menor número de calorías y menor cantidad de grasas, <mark class="fw-bold">por lo que son una opción ideal como tentempié.</mark></p>
+                    <p>Son el fruto seco con mayor densidad de nutrientes. Son sabrosos y deliciosos. Tienen: tiamina, vitamina B6, cobre, manganeso, potasio, fibra, fósforo y magnesio. Además, entre los aperitivos de frutos secos, <span class="fw-bold">los pistachos contienen la mayor cantidad de polifenoles antioxidantes</span>.</p>
+                    <p>Aunque aún se desconoce la función de los antioxidantes, las investigaciones sugieren que seguir una dieta con alimentos que contengan antioxidantes es un hábito alimenticio inteligente.</p>
+                    <p><a href="./pages/productos.html#propiedades" class="btn btn-piste">Descubrí más beneficios</a></p>
                 </div>
-                <div class="propiedades">
-                    <img src="./img/galeria0.jpg" alt="Cosecha de árbol de pistacho">
+                <div class="propiedades col-12 col-lg-6 order-first order-lg-last">
+                    <img class="my-3 my-lg-0" src="./img/galeria0.jpg" alt="Cosecha de árbol de pistacho">
                 </div>
             </div>
         </section>
         <!-- Galería -->
-        <section class="photo-grid-container">
-            <h2>Galería</h2>
-            <article class="photo-grid">
-                <div class="photo-grid-item first-item">
-                    <div class="fotos-en-pares">
-                        <img src="./img/galeria1.jpg" alt="Arbol de pistacho, primer plano">
-                    </div>
-                    <div class="photo-grid-item">
-                        <img src="./img/galeria2.jpg" alt="Tractor rojo en finca de pistachos">
-                    </div>
+        <section class="container-fluid section-container text-center separador">
+            <h2 class="pb-3">Recorré nuestras fincas</h2>
+            <article class="row row-gap-3">
+                <div class="col-12 col-md-6 col-lg-4">
+                    <img class="rounded-3 borde-verde" src="./img/galeria1.jpg" alt="Arbol de pistacho, primer plano">
                 </div>
-                <div class="photo-grid-item">
-                    <div class="fotos-en-pares">
-                        <img src="./img/galeria3.jpg" alt="Un pistacho sobre la mano de una persona">
-                    </div>
-                    <div class="photo-grid-item">
-                        <img src="./img/galeria4.jpg"
-                            alt="Vivero con cientos de árboles de pistacho en distintas etapas de crecimiento">
-                    </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <img class="rounded-3 borde-verde" src="./img/galeria2.jpg"
+                        alt="Tractor rojo en finca de pistachos">
                 </div>
-                <div class="photo-grid-item">
-                    <div class="fotos-en-pares">
-                        <img src="./img/galeria5.jpg" alt="Plantín de pistacho germinando">
-                    </div>
-                    <div class="photo-grid-item">
-                        <img src="./img/galeria6.jpg" alt="Torres de bandejas de fábrica repletas de pistachos">
-                    </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <img class="rounded-3 borde-verde" src="./img/galeria3.jpg"
+                        alt="Un pistacho sobre la mano de una persona">
                 </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <img class="rounded-3 borde-verde" src="./img/galeria4.jpg"
+                        alt="Vivero con cientos de árboles de pistacho en distintas etapas de crecimiento">
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <img class="rounded-3 borde-verde" src="./img/galeria5.jpg" alt="Plantín de pistacho germinando">
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <img class="rounded-3 borde-verde" src="./img/galeria6.jpg"
+                        alt="Torres de bandejas de fábrica repletas de pistachos">
                 </div>
         </section>
         <!-- Historia -->
-        <section class="section-container">
-            <span>Label</span>
-            <h2>Nuestra historia</h2>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/12PMeB4_V04?si=cOacaZJFQrEMiDih"
-                title="YouTube video player" frameborder="0"
+        <section class="container-fluid section-pioneros text-center">
+            <span class="c-verde">Somos pioneros</span>
+            <h2>Conocé nuestra historia</h2>
+            <!-- Prueba: el embed de YT desaparece en breakpooints chicos! -->
+            <iframe class="d-none d-md-block mx-auto my-4" width="560" height="315"
+                src="https://www.youtube.com/embed/12PMeB4_V04?si=cOacaZJFQrEMiDih" title="YouTube video player"
+                frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 allowfullscreen></iframe>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur labore nihil, dignissimos non
-                veniam, aut, dolores modi facere eos quos deleniti vitae culpa sapiente. Vitae animi exercitationem
-                autem ducimus dolore.</p>
-            <p><a href="./pages/nosotros.html">Conocé más</a></p>
+            <p>Pisté S.R.L es una empresa familiar con 41 años de experiencia. El pistacho nació de nuestras manos, en San Juan, Argentina, en el año 1980 cuando se germinaron semillas traídas de Irán.</p>
+            <p><a href="./pages/nosotros.html" class="btn btn-piste">Conocé más</a></p>
         </section>
         <!-- Ubicación -->
-        <section class="section-container">
+        <section class="container-fluid section-container text-center">
             <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d54411.56306903083!2d-68.53267665!3d-31.531775499999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x96814029a33cd497%3A0xbff3a3a0233cfcb3!2sSan%20Juan%2C%20San%20Juan%20Province!5e0!3m2!1sen!2sar!4v1705855729586!5m2!1sen!2sar"
-                width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                width="100%" height="450" style="border:0;" allo</section>wfullscreen="" loading="lazy"
                 referrerpolicy="no-referrer-when-downgrade"></iframe>
         </section>
     </main>
     <!-- Footer -->
     <footer>
-        <div class="footer-container">
-            <nav class="nav-footer">
-                <ul>
-                    <li><a href="./index.html">Inicio</a></li>
-                    <li><a href="./pages/productos.html">Productos</a></li>
-                    <li><a href="./pages/nosotros.html">Nosotros</a></li>
-                    <li><a href="./pages/vivero.html">Vivero</a></li>
-                    <li><a href="./pages/contacto.html">Contacto</a></li>
-                </ul>
-            </nav>
-            <div class="contacto-footer">
-                <ul>
-                    <li>mail@direccion.com</li>
-                    <li>Tel: +54 264 xxxx-xxxx</li>
-                    <li>Una dirección postal de San Juan, Argentina</li>
-                </ul>
-            </div>
-        </div>
-        <div class="redes-footer">
-            <ul>
-                <li><a href="#"><img src="" alt="Facebook"></a></li>
-                <li><a href="#"><img src="" alt="Instagram"></a></li>
-                <li><a href="#"><img src="" alt="Twitter"></a></li>
-            </ul>
-        </div>
-        <div class="copyright">
-            <p>Copyright Pisté 2024</p>
-        </div>
-    </footer>
-</body>
+        <div class="container-fluid footer-container text-center">
+            <div class="row">
+                <div class="col-12">
+                    <h3><a href="./pages/contacto.html">Contacto</a></h3>
+                    <p>quiero@pistachos.com</p>
+                    <p>Tel: (+54) 9 264 500 6000</p>
+                    <p>Quiroz 798 Este Rawson, San Juan, Argentina</p>
+                </div>
+                <div class="col-12 my-3 fs-5">
+                    <a href="#"><i class="bi bi-facebook px-3"></i></a>
+                    <a href="#"><i class="bi bi-instagram px-3"></i></a>
+                    <a href="#"><i class="bi bi-linkedin px-3"></i></a>
+                </div>
 
+            </div>
+            <div class="copyright fst-italic">
+                <span>Copyright Pisté 2024. Todos los derechos reservados.</span>
+            </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
 </html>
