@@ -1,0 +1,30 @@
+/* _buttons.scss */
+.btn-piste {
+    color: white;
+    background-color: #00348F;
+    border-color: #00348F;
+
+    &:hover {
+        color: white;
+        background-color: map-get($colores , "azul");
+        border-color: map-get($colores , "azul");
+    }
+
+    &:active {
+        color: white;
+        background-color: map-get($colores , "azul");
+        border-color: map-get($colores , "azul");
+    }
+}
+
+.btn-amarillo {
+    color: map-get($colores , "verde");
+    background-color: map-get($colores , "crema");
+    border-color: map-get($colores , "crema");
+
+    &:hover {
+        color: map-get($colores , "verde");
+        background-color: map-get($colores , "teverde");
+        border-color: map-get($colores , "teverde");
+    }
+}

@@ -1,0 +1,26 @@
+/* _article.scss */
+.product {
+    margin: 1em 0em;
+    border: 1px solid map-get($colores , "menta"); 
+
+    h3 {
+        padding: 0.5em;
+    }
+
+    &:hover {
+        transform: scale(1.01);
+    }
+
+    a {
+        text-decoration: none;
+        color:black;
+    }
+
+    a:hover {
+    color: map-get($colores , "azul-2");
+    }
+}
+
+.article-product p {
+    padding: 0rem 1rem;
+} 

@@ -1,0 +1,51 @@
+/* _header.scss */
+.header-container {
+    background-image: map-get($fotos , "inicio" );
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 30rem;
+    color: map-get($colores , "azul");
+
+    a {
+        color: map-get($colores , "azul");
+    }
+
+    a:hover {
+        color: map-get($colores , "verde");
+    }
+
+    a:hover:active {
+        color: map-get($colores , "teverde");
+    }
+
+    &-productos {
+        background-image: map-get($fotos , "productos");
+        @extend .header-container;
+    }
+
+    &-nosotros {
+        background-image: map-get($fotos , "nosotros");
+        @extend .header-container;
+    }
+
+    &-vivero {
+        background-image: map-get($fotos , "vivero");
+        @extend .header-container;
+    }
+
+    &-contacto {
+        background-image: map-get($fotos , "contacto");
+        @extend .header-container;
+    }
+
+}
+
+.navbar-brand {
+    width: 50%;
+    min-width: 100px;
+
+    img {
+        width: 30%;
+        min-width: 100px;
+    }
+}

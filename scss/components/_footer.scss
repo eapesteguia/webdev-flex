@@ -1,0 +1,21 @@
+/* _footer.scss */
+.footer-container {
+    background-color: map-get($colores , "azul");
+    padding-top: 2em;
+    color: white;
+
+    ul {
+        list-style: none;
+        padding: 0px;
+    }
+
+    a {
+        color: white;
+        text-decoration: none;
+    }
+
+    a:hover {
+        color: map-get($colores , "verde");
+    }
+
+}

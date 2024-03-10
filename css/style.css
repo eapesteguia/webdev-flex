@@ -1,207 +1,204 @@
-/* reseteo de CSS */
+/* _base.scss */
 * {
-    margin: 0;
-	padding: 0;
-    outline: 0;
-    background: transparent;
-    box-sizing: border-box;
-} 
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  background: transparent;
+  box-sizing: border-box;
+}
 
 body {
-    font-family: 'Roboto', sans-serif;
-    font-weight: 400;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
 }
-
-h1, h2, h3, h4, h5 {
-    /* color: #001f53ff; */
-    font-family: 'Roboto', sans-serif;
-    font-weight: 700;
+body h1,
+body h2,
+body h3,
+body h4,
+body h5 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
 }
-
-img {
-    height: auto;
-    max-width: 100%;
+body img {
+  height: auto;
+  max-width: 100%;
 }
-
-mark {
-    background-color: #cbe0aaff;
+body mark {
+  background-color: #cbe0aa;
 }
-
-/* prueba para hacer reponsive el player embebido de YT */
-.yt-responsive {
-    aspect-ratio: 16/9;
-    width: 100%;
-  }
-
-/* 
-Paleta de colores generada con coolors.co 
-https://coolors.co/001f53-ffffc4-cbe0aa-68a177-00ce00
-
---penn-blue: #001f53ff;
---cream: #ffffc4ff;
---tea-green: #cbe0aaff;
---mint: #68a177ff;
---lime-green: #00ce00ff;
-*/
+body .yt-responsive {
+  /* para hacer reponsive el player embebido de YT */
+  aspect-ratio: 16/9;
+  width: 100%;
+}
+body .separador {
+  border-top: 1px solid #E2E8F0;
+}
+body .borde-verde {
+  border: 1.5px solid #00ce00;
+}
 
 .c-azul {
-    color: #001f53;
+  color: #001f53;
+}
+
+.c-azul-2 {
+  color: #00348F;
 }
 
 .c-crema {
-    color: #ffffc4;
+  color: #ffffc4;
 }
 
 .c-teverde {
-    color: #cbe0aa;
+  color: #cbe0aa;
 }
 
 .c-menta {
-    color: #68a177;
+  color: #68a177;
 }
 
 .c-verde {
-    color: #00ce00;
+  color: #00ce00;
 }
 
 .c-gris {
-    color: #E2E8F0;
+  color: #E2E8F0;
 }
 
-.separador {
-    border-top: 1px solid #CAD5CA;
+.c-fondo-wasap {
+  color: #25d366;
 }
 
-.header-container {
-    background-image: url(../img/index-header.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    min-height: 30rem;
-    color: #001f53ff;
+/* _header.scss */
+.header-container, .header-container-contacto, .header-container-vivero, .header-container-nosotros, .header-container-productos {
+  background-image: url(../img/index-1.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 30rem;
+  color: #001f53;
 }
-
-.header-container a {
-    color: #001f53ff;
+.header-container a, .header-container-contacto a, .header-container-vivero a, .header-container-nosotros a, .header-container-productos a {
+  color: #001f53;
 }
-
-.header-container a:hover {
-    color: #00ce00ff;
+.header-container a:hover, .header-container-contacto a:hover, .header-container-vivero a:hover, .header-container-nosotros a:hover, .header-container-productos a:hover {
+  color: #00ce00;
 }
-
-.header-container a:hover:active {
-    color: #68a177ff;
+.header-container a:hover:active, .header-container-contacto a:hover:active, .header-container-vivero a:hover:active, .header-container-nosotros a:hover:active, .header-container-productos a:hover:active {
+  color: #cbe0aa;
 }
- 
-/* 
-No sé como reemplazar el color del nav-link active para que aria-urrent se vea en color verde
-.header-container a:visited {
-    color: #68a177ff;
-} */
+.header-container-productos {
+  background-image: url(../img/index-2.png);
+}
+.header-container-nosotros {
+  background-image: url(../img/index-3.png);
+}
+.header-container-vivero {
+  background-image: url(../img/index-4.png);
+}
+.header-container-contacto {
+  background-image: url(../img/index-5.png);
+}
 
 .navbar-brand {
-    width: 50%;
-    min-width: 100px;
-} 
-
+  width: 50%;
+  min-width: 100px;
+}
 .navbar-brand img {
-    width: 30%;
-    min-width: 100px;
+  width: 30%;
+  min-width: 100px;
 }
 
+/* _sections.scss */
+.section p, .section-contacto p, .section-pioneros p, .section-whatsapp p, .section-container p {
+  margin: 1rem 0rem;
+}
 .section-container {
-/* text-align: center; lo migré a bootstrap */ 
-padding: 2rem 0rem;
+  padding: 2rem 0rem;
 }
-
 .section-container h1 {
-    font-size: 2.5rem;
+  font-size: 2.5rem;
 }
-
 .section-whatsapp {
-    padding: 2rem 1rem;
-    background-color: #25d366;
+  padding: 2rem 1rem;
+  background-color: #25d366;
 }
-
 .section-pioneros {
-    padding: 2rem 1em;
-    background-color: #E2E8F0;
+  padding: 2rem 1rem;
+  background-color: #E2E8F0;
 }
-
 .section-contacto {
-    /* padding: 2rem 1em; */
-    background-color: #E2E8F0;
+  /* padding: 2rem 1em; */
+  background-color: #E2E8F0;
 }
 
-.section-container
-.section-whatsapp
-.section-pioneros
-.section-contacto p {
-    margin: 1rem 0rem;
+/* _article.scss */
+.product {
+  margin: 1em 0em;
+  border: 1px solid #68a177;
+}
+.product h3 {
+  padding: 0.5em;
+}
+.product:hover {
+  transform: scale(1.01);
+}
+.product a {
+  text-decoration: none;
+  color: black;
+}
+.product a:hover {
+  color: #00348F;
 }
 
 .article-product p {
-    padding: 0rem 1rem;
-} 
-
-.borde-verde {
-    border: 1.5px solid #00CE00;
+  padding: 0rem 1rem;
 }
 
-.product {
-    margin: 1em 0em;
-    border: 1px solid #68a177ff; 
-}
-
-.product h3 {
-    padding: 0.5em;
-}
-
+/* _buttons.scss */
 .btn-piste {
-    color: white;
-    background-color: #00348F;
-    border-color: #00348F;
+  color: white;
+  background-color: #00348F;
+  border-color: #00348F;
 }
-
 .btn-piste:hover {
-    color: white;
-    background-color: #001f53ff;
-    border-color: #001f53ff;
+  color: white;
+  background-color: #001f53;
+  border-color: #001f53;
 }
-
 .btn-piste:active {
-    color: white;
-    background-color: #001f53ff;
-    border-color: #001f53ff;
+  color: white;
+  background-color: #001f53;
+  border-color: #001f53;
 }
 
 .btn-amarillo {
-    color: #00ce00ff;
-    background-color: #ffffc4ff;
-    border-color: #ffffc4ff;
+  color: #00ce00;
+  background-color: #ffffc4;
+  border-color: #ffffc4;
 }
-
 .btn-amarillo:hover {
-    color: #00ce00ff;
-    background-color: #cbe0aaff;
-    border-color: #cbe0aaff;
+  color: #00ce00;
+  background-color: #cbe0aa;
+  border-color: #cbe0aa;
 }
 
+/* _footer.scss */
 .footer-container {
-    background-color: #001f53ff;
-    padding-top: 2em;
-    color: white;
+  background-color: #001f53;
+  padding-top: 2em;
+  color: white;
 }
-
 .footer-container ul {
-    list-style:none;
-    padding: 0px;
+  list-style: none;
+  padding: 0px;
 }
-
 .footer-container a {
-    color: white;
-    text-decoration: none;
+  color: white;
+  text-decoration: none;
+}
+.footer-container a:hover {
+  color: #00ce00;
 }
 
-.footer-container a:hover {
-    color: #00CE00;
-}
+/*# sourceMappingURL=style.css.map */

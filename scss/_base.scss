@@ -1,0 +1,78 @@
+// bases del proyecto: variables, reseteo de CSS, paleta de colores, etc
+/* _base.scss */
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    background: transparent;
+    box-sizing: border-box;
+}
+
+@mixin fuentes($font-name: Roboto, $font-weight: 400) {
+    font-family: quote($font-name), sans-serif;
+    font-weight: $font-weight;
+}
+
+// Paleta de colores: https://coolors.co/001f53-ffffc4-cbe0aa-68a177-00ce00
+$colores: (
+    azul: #001f53,
+    azul-2: #00348F,
+    crema: #ffffc4,
+    teverde: #cbe0aa,
+    menta: #68a177,
+    verde: #00ce00,
+    gris: #E2E8F0,
+    fondo-wasap: #25d366,
+);
+
+$fotos: (
+    inicio: url(../img/index-1.png),    
+    productos: url(../img/index-2.png),
+    nosotros: url(../img/index-3.png),
+    vivero: url(../img/index-4.png),
+    contacto: url(../img/index-5.png),
+);
+
+
+body {
+
+    @include fuentes();
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5 {
+        @include fuentes(Roboto, 700)
+    }
+
+    img {
+        height: auto;
+        max-width: 100%;
+    }
+
+    mark {
+        background-color: map-get($colores , "teverde");
+    }
+
+    .yt-responsive {
+        /* para hacer reponsive el player embebido de YT */
+        aspect-ratio: 16/9;
+        width: 100%;
+    }
+
+    .separador {
+        border-top: 1px solid map-get($colores , "gris");
+    }
+
+    .borde-verde {
+        border: 1.5px solid map-get($colores , "verde");
+    }
+
+}
+
+@each $key, $value in $colores {
+    .c-#{$key} {
+        color: $value;
+    }
+}

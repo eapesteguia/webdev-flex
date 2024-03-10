@@ -1,0 +1,44 @@
+/* _sections.scss */
+.section {
+
+    p {
+        margin: 1rem 0rem;
+    }
+
+    &-container {
+        padding: 2rem 0rem;
+
+        h1 {
+            font-size: 2.5rem;
+        }
+
+        @extend .section;
+    }
+
+    &-whatsapp {
+
+        padding: 2rem 1rem;
+        background-color: map-get($colores , "fondo-wasap");
+
+        @extend .section;
+
+    }
+
+    &-pioneros {
+
+        padding: 2rem 1rem;
+        background-color: map-get($colores , "gris");
+
+        @extend .section;
+
+    }
+
+    &-contacto {
+
+        /* padding: 2rem 1em; */
+        background-color: map-get($colores , "gris");
+
+        @extend .section;
+    }
+
+}

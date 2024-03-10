@@ -1,4 +1,8 @@
 #ignore config for GIT
 .vscode/
+.sass-cache
+.env
 pruebas.css
 pruebas.html
+base.css
+*.txt
